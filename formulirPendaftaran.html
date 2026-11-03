@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pendaftaran</title>
+  </head>
+  <body bgcolor="#5CAD64">
+    <head>
+      <nav align="center">
+        <a href="formulirPendaftaran.html">Formulir Pendaftaran</a> |
+        <a href="tabelPeserta.html">Tabel Peserta</a>
+      </nav>
+      <hr color="black" />
+    </head>
+    <main>
+      <h1 align="center" color="#0F3440">Formulir Pendaftaran</h1>
+      <hr color="black" />
+      <section>
+        <article border="1">
+          <form action="post">
+            <!-- Data Diri -->
+            <label for="nama">Nama Lengkap:</label><br />
+            <input type="text" id="nama" name="nama" required /><br /><br />
+
+            <label for="jenisKelamin">Jenis Kelamin:</label><br />
+            <input
+              type="radio"
+              id="laki-laki"
+              name="jenisKelamin"
+              value="Laki-laki"
+              required
+            />
+            <label for="laki-laki">Laki-laki</label>
+            <input
+              type="radio"
+              id="perempuan"
+              name="jenisKelamin"
+              value="Perempuan"
+              required
+            />
+            <label for="perempuan">Perempuan</label><br /><br />
+
+            <label for="agama">Agama:</label><br />
+            <select id="agama" name="agama" required>
+              <optgroup label="Agama Mayoritas">
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+              </optgroup>
+              <optgroup label="Agama Lain">
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+              </optgroup>
+            </select>
+            ><br /><br />
+
+            <label for="tempatLahir">Tempat Lahir:</label><br />
+            <input
+              type="text"
+              id="tempatLahir"
+              name="tempatLahir"
+              required
+            /><br /><br />
+
+            <label for="tanggalLahir">Tanggal Lahir:</label><br />
+            <input
+              type="date"
+              id="tanggalLahir"
+              name="tanggalLahir"
+              required
+            /><br /><br />
+
+            <label for="alamat">Alamat:</label><br />
+            <textarea id="alamat" name="alamat" required></textarea><br /><br />
+
+            <!-- Riwayat Pendidikan -->
+            <label for="sd">SD / MI:</label><br />
+            <input type="text" id="sd" name="sd" required />
+            <label for="tahunSD">Masuk:</label>
+            <input type="date" id="tahunSD" name="tahunSD" required />
+            <label for="tahunSD">Lulus:</label>
+            <input type="date" id="tahunSD" name="tahunSD" required />
+            <br /><br />
+
+            <label for="smp">SMP / MTs:</label><br />
+            <input type="text" id="smp" name="smp" required />
+            <label for="tahunSMP">Masuk:</label>
+            <input type="date" id="tahunSMP" name="tahunSMP" required />
+            <label for="tahunSMP">Lulus:</label>
+            <input type="date" id="tahunSMP" name="tahunSMP" required />
+            <br /><br />
+
+            <label for="sma">SMA / SMK:</label><br />
+            <input type="text" id="sma" name="sma" required />
+            <label for="tahunSMA">Masuk:</label>
+            <input type="date" id="tahunSMA" name="tahunSMA" required />
+            <label for="tahunSMA">Lulus:</label>
+            <input type="date" id="tahunSMA" name="tahunSMA" required />
+            <br /><br />
+
+            <!-- Pelatihan -->
+            <label for="pelatihan">Pelatihan yang pernah diikuti:</label><br />
+            <input
+              type="checkbox"
+              id="pelatihan1"
+              name="pelatihan"
+              value="JavaScript"
+            />
+            <label for="pelatihan1">JavaScript</label>
+            <input
+              type="checkbox"
+              id="pelatihan2"
+              name="pelatihan"
+              value="TypeScript"
+            />
+            <label for="pelatihan2">TypeScript</label>
+            <input
+              type="checkbox"
+              id="pelatihan3"
+              name="pelatihan"
+              value="HTML & CSS"
+            />
+            <label for="pelatihan3">HTML & CSS</label><br /><br />
+
+            <!-- Pilih jurusan -->
+            <label for="pelatihan">Pilih jurusan:</label><br />
+            <select id="pelatihan" name="pelatihan" required>
+              <optgroup label="Teknik">
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Teknik Kimia">Teknik kimia</option>
+                <option value="Teknik Elektro">Teknik Elektro</option>
+              </optgroup>
+              <optgroup label="Ekonomi">
+                <option value="Manajemen">Manajemen</option>
+                <option value="Akuntansi">Akuntansi</option>
+              </optgroup>
+            </select>
+            ><br /><br />
+
+            <button type="submit">Daftar</button>
+            <button type="reset">Reset</button>
+          </form>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
